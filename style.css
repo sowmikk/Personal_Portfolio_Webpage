@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cantarell', sans-serif;
+}
+
+nav {
+    background-color: #0f4c75;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: center;
+    padding: 0 50px;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 20px;
+    position: relative;
+}
+
+nav li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: auto 50px;
+    font-size: 1.3rem;
+}
+
+nav ul li:hover {
+    background-color: #d54062;
+}
+
+#welcome-section {
+    background-image: url(https://i.pinimg.com/originals/53/0a/74/530a746087d021696f38e010ff8c3112.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35vh;
+}
+
+#welcome-section .welcome h1 {
+    font-size: 5rem;
+    color: #eeeeee;
+}
+
+#welcome-section .welcome h2 {
+    font-size: 2rem;
+    color: #ffeadb;
+}
+
+
+#projects {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2rem;
+    width: 100%;
+    padding: 80px 0 0;
+    color: #eeeeee;
+    text-decoration: underline;
+}
+
+.project_grid {
+    width: 100%;
+    padding: 0 450px 80px;
+}
+
+.row {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+
+.column {
+    width: 500px;
+    padding: 0 40px;
+    height: auto;
+}
+
+.column img {
+    width: 410px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.column a {
+    text-decoration: none;
+    display: block;
+}
+
+.column p {
+    background-color: #f4ea8e;
+    width: 410px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 6px;
+    font-size: 1.2rem;
+    font-family: 'Cantarell', sans-serif;
+    color: #3f3f44;
+    font-weight: 900;
+}
+
+
+
+.column a:hover>p {
+    background-color: #f6d743;
+    transition: 700ms;
+}
+
+
+#contact {
+    background-color: #3b5249;
+    text-align: center;
+    padding: 250px 0;
+    max-height: 729px;
+}
+
+#contact h1 {
+    font-size: 3.5rem;
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+#contact h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+.contact_grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: #eeeeee;
+}
+
+.contact_grid a {
+    display: flex;
+    text-decoration: none;
+    padding: 0 40px;
+}
+
+.fab,
+.fas {
+    padding-right: 10px;
+    color: #eeeeee;
+}
+
+.contact_text {
+    font-size: 1.5rem;
+    font-style: none;
+    color: #eeeeee;
+}
+
+.contact_grid a:hover {
+    margin-top: 7px;
+    transition: 300ms;
+}
+
+footer {
+    height: 80px;
+    background-color: #1f4068;
+    color: #eeeeee;
+    text-align: center;
+}
+
+footer p {
+    padding: 25px 0;
+}
+
+
+
+/* ---------------------------------------- */
+
+@media (max-width: 1000px) {
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .project_grid {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .row {
+        display: block;
+        margin: 0;
+    }
+
+    .column {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+@media (max-width: 515px) {
+
+    #welcome-section .welcome h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-section .welcome h2 {
+        font-size: 1rem;
+    }
+
+    .project_grid {
+        padding: 30px 0;
+    }
+
+
+    .column {
+        width: 100%;
+    }
+
+    .column a {
+        width: 250px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .column img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .column p {
+        width: 250px;
+        height: 60px;
+        margin: 0;
+    }
+
+    #contact {
+        padding: 150px 0;
+        max-height: 729px;
+    }
+
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact h4 {
+        font-size: 0.9rem;
+    }
+
+    .contact_text {
+        font-size: 1.1rem;
+    }
+
+    #profile-link {
+        padding: 10px 20px;
+    }
+}
